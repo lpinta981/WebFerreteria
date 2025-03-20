@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferretería Mana Sakilla - Herramientas y materiales de calidad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header y Navegación -->
+  <header>
+    <div class="container header-container">
+      <!-- Menú desplegable para escritorio (visible solo en pantallas grandes) -->
+      <div class="dropdown-menu menu-hamburger-desktop">
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="dropdown-content">
+          <div class="dropdown-category">Productos</div>
+          <a href="#herramientas"><i class="fas fa-tools"></i> Herramientas Eléctricas</a>
+          <a href="#manuales"><i class="fas fa-wrench"></i> Herramientas Manuales</a>
+          <a href="#construccion"><i class="fas fa-hard-hat"></i> Materiales de Construcción</a>
+          <a href="#pintura"><i class="fas fa-paint-roller"></i> Pinturas y Accesorios</a>
+          <a href="#plomeria"><i class="fas fa-faucet"></i> Plomería</a>
+          <a href="#electricidad"><i class="fas fa-plug"></i> Electricidad</a>
+          
+          <div class="dropdown-divider"></div>
+          
+          <div class="dropdown-category">Servicios</div>
+          <a href="#cotizaciones"><i class="fas fa-file-invoice-dollar"></i> Cotizaciones</a>
+          <a href="#despacho"><i class="fas fa-truck"></i> Despacho a Domicilio</a>
+          <a href="#asesorias"><i class="fas fa-comments"></i> Asesorías Técnicas</a>
+          <a href="#instalaciones"><i class="fas fa-hammer"></i> Servicio de Instalación</a>
+          
+          <div class="dropdown-divider"></div>
+          
+          <div class="dropdown-category">Contacto</div>
+          <a href="#ubicacion"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+          <a href="#contacto"><i class="fas fa-phone-alt"></i> Teléfonos</a>
+          <a href="#redes"><i class="fas fa-share-alt"></i> Redes Sociales</a>
+          <a href="#horarios"><i class="far fa-clock"></i> Horarios de Atención</a>
+        </div>
+      </div>
+      
+      <!-- Este menú hamburguesa solo se mostrará en móviles -->
+      <div class="menu-icon" id="menuIcon">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo Mana Sakilla" class="logo-img">
+        <span>Ferretería Mana Sakilla</span>
+      </div>
+      
+      <nav>
+        <ul id="mainMenu">
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-extra">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar productos...">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="cart-icon" id="cartIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Mana Sakilla: Herramientas y materiales de calidad</h1>
+      <p>Ofrecemos todo lo que necesitas para tus proyectos de construcción, remodelación y reparación. Calidad y experiencia a tu servicio.</p>
+      <div class="cta-buttons">
+        <a href="#productos" class="btn btn-primary">Ver productos</a>
+        <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorías populares -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <h2>Categorías populares</h2>
+        <p>Explora nuestras categorías más buscadas y encuentra lo que necesitas para tu proyecto</p>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/categorias/herramientas-electricas.jpg" alt="Herramientas eléctricas">
+          </div>
+          <div class="category-content">
+            <h3>Herramientas Eléctricas</h3>
+            <p>Taladros, destornilladores, sierras y más para todo tipo de trabajos</p>
+            <a href="#herramientas" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/categorias/herramientas-manuales.jpg" alt="Herramientas manuales">
+          </div>
+          <div class="category-content">
+            <h3>Herramientas Manuales</h3>
+            <p>Martillos, alicates, llaves y todo lo necesario para tus reparaciones</p>
+            <a href="#manuales" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/categorias/pinturas.jpg" alt="Pinturas">
+          </div>
+          <div class="category-content">
+            <h3>Pinturas y Accesorios</h3>
+            <p>Amplia gama de colores y accesorios para pintar como un profesional</p>
+            <a href="#pintura" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/categorias/materiales-construccion.jpg" alt="Materiales de construcción">
+          </div>
+          <div class="category-content">
+            <h3>Materiales de Construcción</h3>
+            <p>Todo lo que necesitas para construir o remodelar tu espacio</p>
+            <a href="#construccion" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos destacados -->
+  <section class="section bg-light" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Productos destacados</h2>
+        <p>Conoce nuestros productos más vendidos y con las mejores valoraciones</p>
+      </div>
+      
+      <div class="products-slider">
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <div class="product-badge">Oferta</div>
+          <div class="product-img">
+            <img src="images/productos/taladro.jpg" alt="Taladro Percutor">
+          </div>
+          <div class="product-content">
+            <div class="product-category">Herramientas Eléctricas</div>
+            <h3 class="product-title">Taladro Percutor 20V Inalámbrico</h3>
+            <div class="product-price">
+              <span class="current-price">$59.990</span>
+              <span class="old-price">$79.990</span>
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+              <div class="product-meta">
+                <div class="meta-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/productos/martillo.jpg" alt="Martillo">
+          </div>
+          <div class="product-content">
+            <div class="product-category">Herramientas Manuales</div>
+            <h3 class="product-title">Martillo de Carpintero Profesional</h3>
+            <div class="product-price">
+              <span class="current-price">$12.990</span>
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+              <div class="product-meta">
+                <div class="meta-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <div class="product-badge">Nuevo</div>
+          <div class="product-img">
+            <img src="images/productos/sierra.jpg" alt="Sierra Circular">
+          </div>
+          <div class="product-content">
+            <div class="product-category">Herramientas Eléctricas</div>
+            <h3 class="product-title">Sierra Circular 7-1/4" 1800W</h3>
+            <div class="product-price">
+              <span class="current-price">$89.990</span>
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+              <div class="product-meta">
+                <div class="meta-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 4 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/productos/pintura.jpg" alt="Pintura">
+          </div>
+          <div class="product-content">
+            <div class="product-category">Pinturas</div>
+            <h3 class="product-title">Pintura Látex Premium 1 Galón</h3>
+            <div class="product-price">
+              <span class="current-price">$19.990</span>
+              <span class="old-price">$24.990</span>
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+              <div class="product-meta">
+                <div class="meta-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-all">
+        <a href="#" class="btn btn-primary">Ver todos los productos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ofertas especiales -->
+  <section class="section" id="ofertas">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ofertas especiales</h2>
+        <p>Aprovecha nuestras ofertas por tiempo limitado y ahorra en tus compras</p>
+      </div>
+      
+      <div class="offers-container">
+        <div class="offer-card">
+          <div class="offer-bg" style="background-image: url('images/ofertas/herramientas-oferta.jpg');"></div>
+          <div class="offer-overlay">
+            <h3 class="offer-title">20% de descuento en herramientas eléctricas</h3>
+            <p class="offer-description">Ofertas por tiempo limitado en las mejores marcas. ¡No te lo pierdas!</p>
+            <a href="#" class="btn btn-primary">Ver ofertas</a>
+          </div>
+        </div>
+        
+        <div class="offer-card">
+          <div class="offer-bg" style="background-image: url('images/ofertas/pinturas-oferta.jpg');"></div>
+          <div class="offer-overlay">
+            <h3 class="offer-title">2x1 en pinturas seleccionadas</h3>
+            <p class="offer-description">Lleva 2 y paga 1 en nuestra selección de pinturas premium.</p>
+            <a href="#" class="btn btn-primary">Ver ofertas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section bg-light" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Conoce las experiencias de quienes ya han confiado en nosotros</p>
+      </div>
+      
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>Excelente variedad de productos y muy buenos precios. El servicio de atención al cliente es excepcional, siempre están dispuestos a ayudar y dar buenos consejos para nuestros proyectos.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="images/testimonios/cliente1.jpg" alt="Cliente">
+            </div>
+            <div class="author-info">
+              <h4>Juan Pérez</h4>
+              <p>Constructor</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>Encontré todo lo que necesitaba para renovar mi cocina. Los precios son justos y la calidad de los productos es muy buena. Definitivamente volveré para futuros proyectos.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="images/testimonios/cliente2.jpg" alt="Cliente">
+            </div>
+            <div class="author-info">
+              <h4>María González</h4>
+              <p>Diseñadora de interiores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestros servicios</h2>
+        <p>Además de productos de calidad, te ofrecemos servicios que complementan tu experiencia</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3 class="service-title">Despacho a domicilio</h3>
+          <p>Entregamos tus compras directamente en tu hogar o lugar de trabajo. Consulta por cobertura y tarifas.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3 class="service-title">Arriendo de herramientas</h3>
+          <p>Si necesitas una herramienta para un proyecto específico, puedes arrendarla por el tiempo que necesites.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3 class="service-title">Asesoría técnica</h3>
+          <p>Nuestro equipo de expertos te brinda asesoría para que elijas los productos adecuados para tu proyecto.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3 class="service-title">Cotizaciones</h3>
+          <p>Realizamos cotizaciones personalizadas para proyectos grandes o pequeños. ¡Solicita la tuya hoy!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto y ubicación -->
+  <section class="section bg-light" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contacto y ubicación</h2>
+        <p>Estamos listos para atenderte, no dudes en contactarnos o visitarnos</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Dirección</h4>
+              <p>Av. Principal #123, Ciudad</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Teléfono</h4>
+              <p><a href="tel:+123456789">+12 345 6789</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p><a href="mailto:info@manasakilla.com">info@manasakilla.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="far fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Horario de atención</h4>
+              <p>Lunes a Viernes: 8:30 AM - 6:30 PM<br>
+              Sábados: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Envíanos un mensaje</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" id="phone" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.2215507896483!2d-70.6482!3d-33.4489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI2JzU2LjAiUyA3MMKwMzgnNTMuNSJX!5e0!3m2!1ses!2scl!4v1620000000000!5m2!1ses!2scl" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3>Sobre nosotros</h3>
+          <p class="footer-about">Somos una ferretería con más de 10 años de experiencia, ofreciendo productos de calidad y servicio excepcional. Nos especializamos en herramientas y materiales para todo tipo de proyectos.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Enlaces rápidos</h3>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+              <li><a href="#categorias"><i class="fas fa-chevron-right"></i> Categorías</a></li>
+              <li><a href="#productos"><i class="fas fa-chevron-right"></i> Productos</a></li>
+              <li><a href="#ofertas"><i class="fas fa-chevron-right"></i> Ofertas</a></li>
+              <li><a href="#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+              <li><a href="#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Categorías</h3>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#herramientas"><i class="fas fa-chevron-right"></i> Herramientas Eléctricas</a></li>
+              <li><a href="#manuales"><i class="fas fa-chevron-right"></i> Herramientas Manuales</a></li>
+              <li><a href="#construccion"><i class="fas fa-chevron-right"></i> Materiales de Construcción</a></li>
+              <li><a href="#pintura"><i class="fas fa-chevron-right"></i> Pinturas y Accesorios</a></li>
+              <li><a href="#plomeria"><i class="fas fa-chevron-right"></i> Plomería</a></li>
+              <li><a href="#electricidad"><i class="fas fa-chevron-right"></i> Electricidad</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p class="footer-newsletter">Suscríbete para recibir nuestras ofertas y novedades directamente en tu correo.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Tu email">
+            <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <p>Al suscribirte, aceptas nuestra <a href="#">política de privacidad</a>.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Ferretería Mana Sakilla. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Carrito flotante -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <div class="cart-items">
+      <!-- Aquí se cargarán los items del carrito dinámicamente -->
+    </div>
+    
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Subtotal:</span>
+        <span>$0</span>
+      </div>
+      <div class="summary-row">
+        <span>Impuesto:</span>
+        <span>$0</span>
+      </div>
+      <div class="summary-row summary-total">
+        <span>Total:</span>
+        <span>$0</span>
+      </div>
+    </div>
+    
+    <div class="cart-actions">
+      <a href="#" class="btn btn-secondary">Ver carrito</a>
+      <a href="#" class="btn btn-primary">Checkout</a>
+    </div>
+  </div>
+
+  <!-- Overlay del carrito -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
